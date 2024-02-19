@@ -5,7 +5,7 @@ import { FiBell } from "react-icons/fi";
 
 const TopBar = () => {
   return (
-    <div className='my-8 p-3 text-2xl flex'>
+    <div className='mb-8 p-3 text-2xl flex'>
         <div>
         <h1 className='font-extralight'>Hello, </h1>
         <h1 className='flex font-semibold'>
