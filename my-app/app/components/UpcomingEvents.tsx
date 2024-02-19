@@ -4,7 +4,7 @@ import { BsFillAlarmFill } from "react-icons/bs";
 
 const UpcomingEvents = () => {
   return (
-    <div className="bg-secondary  w-[22rem] h-[11rem] rounded-[2.7rem] flex flex-col overflow-hidden my-4 py-6 px-8">
+    <div className="bg-secondary  w-[22rem] h-[11rem] rounded-[2.7rem] flex flex-col overflow-hidden m-4 py-6 px-8">
       <div className="flex align-middle">
         <div className="bg-bright w-12 p-2 rounded-[12rem] flex justify-center">
           <FaArrowRight className="text-black text-xl" />
