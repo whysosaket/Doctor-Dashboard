@@ -1,9 +1,14 @@
 import React from 'react'
 import Charts from './Charts'
+import {motion} from 'framer-motion';
 
 const Statistics = () => {
   return (
-    <div className="bg-secondary  md:w-[25rem] h-[23rem w-full rounded-[2.7rem] flex flex-col overflow-hidden md:m-4 py-8 px-8">
+    <motion.div
+    initial={{y:-50, opacity:0}}
+    animate={{y:0, opacity:1}}
+    transition={{duration:0.7, delay:1}}
+    className="bg-secondary  md:w-[25rem] h-[23rem w-full rounded-[2.7rem] flex flex-col overflow-hidden md:m-4 py-8 px-8">
         <div className='flex justify-between'>
             <div className='text-white'>
             <h1 className='text-2xl font-semibold'>Statistics</h1>
@@ -16,7 +21,7 @@ const Statistics = () => {
             </select>
         </div>
         <Charts />
-    </div>
+    </motion.div>
   )
 }
 

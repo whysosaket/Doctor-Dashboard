@@ -1,9 +1,14 @@
 import React from "react";
 import { FaArrowTrendUp } from "react-icons/fa6";
+import {motion} from 'framer-motion';
 
 const PatientsVisited = () => {
   return (
-    <div className="bg-secondary md:w-[22rem] w-full h-[11rem] rounded-[2.7rem] md:m-4 md:mx-4 flex overflow-hidden">
+    <motion.div
+    initial={{y:-50, opacity:0}}
+    animate={{y:0, opacity:1}}
+    transition={{duration:0.7, delay:0.5}}
+    className="bg-secondary md:w-[22rem] w-full h-[11rem] rounded-[2.7rem] md:m-4 md:mx-4 flex overflow-hidden">
       <div className="w-7/12 flex align-middle justify-center">
         <div className="my-auto">
           <h1 className="text-4xl font-semibold">42</h1>
@@ -23,7 +28,7 @@ const PatientsVisited = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

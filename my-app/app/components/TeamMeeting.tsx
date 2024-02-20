@@ -2,10 +2,15 @@ import React from "react";
 import { LuAlarmClock } from "react-icons/lu";
 import { GoBellFill } from "react-icons/go";
 import { FaArrowRightLong } from "react-icons/fa6";
+import {motion} from 'framer-motion';
 
 const TeamMeeting = () => {
   return (
-    <div className="bg-secondary  md:w-[18rem] w-5/6 mx-auto h-[11rem] rounded-[2.7rem] flex overflow-hidden m-4 py-8 px-8">
+    <motion.div
+    initial={{y:80, opacity:0}}
+    animate={{y:0, opacity:1}}
+    transition={{duration:0.7, delay:0.9}}
+    className="bg-secondary  md:w-[18rem] w-5/6 mx-auto h-[11rem] rounded-[2.7rem] flex overflow-hidden m-4 py-8 px-8">
       <div className="w-[70%]">
         <h1 className="font-semibold text-xl">Team Meeting</h1>
         <div className="flex">
@@ -29,7 +34,7 @@ const TeamMeeting = () => {
           <FaArrowRightLong className="text-black text-[2rem] my-auto" />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

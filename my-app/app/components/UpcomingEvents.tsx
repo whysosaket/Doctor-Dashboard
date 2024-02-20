@@ -1,10 +1,15 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa6";
 import { BsFillAlarmFill } from "react-icons/bs";
+import { motion } from "framer-motion";
 
 const UpcomingEvents = () => {
   return (
-    <div className="bg-secondary  md:w-[22rem] w-full h-[11rem] rounded-[2.7rem] flex flex-col overflow-hidden my-4 md:m-4 py-6 px-8">
+    <motion.div
+    initial={{y:-50, opacity:0}}
+    animate={{y:0, opacity:1}}
+    transition={{duration:0.7, delay:0.8}}
+    className="bg-secondary  md:w-[22rem] w-full h-[11rem] rounded-[2.7rem] flex flex-col overflow-hidden my-4 md:m-4 py-6 px-8">
       <div className="flex align-middle">
         <div className="bg-bright w-12 p-2 rounded-[12rem] flex justify-center">
           <FaArrowRight className="text-black text-xl" />
@@ -36,7 +41,7 @@ const UpcomingEvents = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

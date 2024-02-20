@@ -1,10 +1,15 @@
 import React from 'react'
 import { HiOutlineDotsHorizontal } from "react-icons/hi";
 import { FaArrowTrendUp } from "react-icons/fa6";
+import {motion} from 'framer-motion';
 
 const Consultation = () => {
   return (
-    <div className="bg-secondary  md:w-[18rem] w-5/6 mx-auto h-[11rem] rounded-[2.7rem] flex flex-col overflow-hidden m-4 py-8 px-8">
+    <motion.div
+    initial={{y:80, opacity:0}}
+    animate={{y:0, opacity:1}}
+    transition={{duration:0.7, delay:1}}
+    className="bg-secondary  md:w-[18rem] w-5/6 mx-auto h-[11rem] rounded-[2.7rem] flex flex-col overflow-hidden m-4 py-8 px-8">
         <div className='flex justify-between w-full'>
             <h1 className='text-[#CCC] text-lg'>Consultation</h1>
             <HiOutlineDotsHorizontal className='text-black text-4xl' />
@@ -23,7 +28,7 @@ const Consultation = () => {
                 </div>
             </div>
         </div>
-    </div>
+    </motion.div>
   )
 }
 

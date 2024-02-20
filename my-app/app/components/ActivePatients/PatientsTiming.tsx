@@ -1,9 +1,14 @@
 import React from 'react'
 import TimeInfo from './TimeInfo'
+import { motion } from 'framer-motion'
 
 const PatientsTiming = () => {
   return (
-    <div className="bg-secondary md:w-[30rem] md:h-[25rem] rounded-[2.7rem] m-4 p-8 overflow-hidden">
+    <motion.div
+    initial={{y:80, opacity:0}}
+    animate={{y:0, opacity:1}}
+    transition={{duration:0.7, delay:0.7}}
+    className="bg-secondary md:w-[30rem] md:h-[25rem] rounded-[2.7rem] m-4 p-8 overflow-hidden">
         <TimeInfo />
         <TimeInfo />
         <TimeInfo />
@@ -18,7 +23,7 @@ const PatientsTiming = () => {
         </div>
     </div>
         <TimeInfo />
-    </div>
+    </motion.div>
   )
 }
 
