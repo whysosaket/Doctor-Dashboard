@@ -2,6 +2,7 @@ import React from "react";
 import ActivePatients from "./ActivePatients";
 import Chat from "./Chat";
 import { motion } from "framer-motion";
+import image from "../../assets/a1.png";
 
 const Profile = () => {
   return (
@@ -19,7 +20,7 @@ const Profile = () => {
       >
         <div className="w-28 h-28 border-[0.3rem] border-[#409BEE] rounded-full mx-auto p-2">
           <img
-            src="https://randomuser.me/api/portraits"
+            src={image.src}
             alt="profile"
             className="w-full h-full rounded-full bg-red-300"
           />
