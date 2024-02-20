@@ -4,7 +4,7 @@ import { FaArrowTrendUp } from "react-icons/fa6";
 
 const Consultation = () => {
   return (
-    <div className="bg-secondary  w-[18rem] h-[11rem] rounded-[2.7rem] flex flex-col overflow-hidden m-4 py-8 px-8">
+    <div className="bg-secondary  md:w-[18rem] w-5/6 mx-auto h-[11rem] rounded-[2.7rem] flex flex-col overflow-hidden m-4 py-8 px-8">
         <div className='flex justify-between w-full'>
             <h1 className='text-[#CCC] text-lg'>Consultation</h1>
             <HiOutlineDotsHorizontal className='text-black text-4xl' />

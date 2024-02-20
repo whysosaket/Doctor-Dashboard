@@ -7,7 +7,7 @@ import ProfilePicture from './ProfilePicture';
 
 const Navbar = () => {
   return (
-    <div className='flex flex-col justify-between h-screen py-8'>
+    <div className='md:flex hidden flex-col justify-between h-screen py-8'>
         <div>
             <img src={logo.src} alt="logo" className='w-8' />
         </div>

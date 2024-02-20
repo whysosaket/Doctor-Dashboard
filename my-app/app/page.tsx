@@ -12,36 +12,36 @@ import Statistics from "./components/Statistics/Statistics";
 
 export default function Home() {
   return (
-    <div className="text-white p-6 flex">
-      <div className="px-6">
+    <div className="text-white md:p-6 flex">
+      <div className="md:px-6">
         <Navbar />
       </div>
-      <div className="bg-[#151C39] w-full p-8 rounded-[2rem] flex">
-        <div className="w-2/3">
+      <div className="bg-[#151C39] w-full md:p-8 p-4  rounded-[2rem] md:flex block">
+        <div className="w-full">
           <TopBar />
-          <div className="flex">
+          <div className="md:flex">
           <div>
             <PatientsVisited />
             <UpcomingEvents />
           </div>
           <Statistics />
           </div>
-          <div className="flex">
+          <div className="md:flex">
             <div>
-            <h1 className="text-2xl font-semibold ml-8">Active Patients</h1>
+            <h1 className="text-2xl font-semibold ml-8 my-2">Active Patients</h1>
           <PatientsTiming />
             </div>
           
           <div>
           <div>
-            <h1 className="text-2xl font-semibold ml-8">Upcoming Events</h1>
+            <h1 className="text-2xl font-semibold ml-8 my-2">Upcoming Events</h1>
             <TeamMeeting />
             <Consultation />
           </div>
           </div>
         </div>
         </div>
-        <div className="w-1/3">
+        <div className="md:w-1/3">
           <Profile />
         </div>
       </div>

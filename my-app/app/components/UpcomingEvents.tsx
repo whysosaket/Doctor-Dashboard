@@ -4,7 +4,7 @@ import { BsFillAlarmFill } from "react-icons/bs";
 
 const UpcomingEvents = () => {
   return (
-    <div className="bg-secondary  w-[22rem] h-[11rem] rounded-[2.7rem] flex flex-col overflow-hidden m-4 py-6 px-8">
+    <div className="bg-secondary  md:w-[22rem] w-full h-[11rem] rounded-[2.7rem] flex flex-col overflow-hidden my-4 md:m-4 py-6 px-8">
       <div className="flex align-middle">
         <div className="bg-bright w-12 p-2 rounded-[12rem] flex justify-center">
           <FaArrowRight className="text-black text-xl" />
@@ -29,7 +29,7 @@ const UpcomingEvents = () => {
           <h1 className="font-semibold text-xl">Aliza Shah</h1>
           <div className="flex">
             <BsFillAlarmFill className="text-[#CCC] text-lg my-auto mr-2" />
-            <h1 className="text-[#CCC] text-sm font-light">08:00-09:00 am</h1>
+            <h1 className="text-[#CCC] md:text-sm text-xs font-light">08:00-09:00 am</h1>
           </div>
           <div className="bg-tertiary mt-4 w-[8rem] px-3 py-2 rounded-[0.7rem]">
             <h1 className="font-light text-xs">Visited 7 days ago</h1>

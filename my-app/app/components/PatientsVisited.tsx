@@ -3,7 +3,7 @@ import { FaArrowTrendUp } from "react-icons/fa6";
 
 const PatientsVisited = () => {
   return (
-    <div className="bg-secondary w-[22rem] h-[11rem] rounded-[2.7rem] m-4 flex overflow-hidden">
+    <div className="bg-secondary md:w-[22rem] w-full h-[11rem] rounded-[2.7rem] md:m-4 md:mx-4 flex overflow-hidden">
       <div className="w-7/12 flex align-middle justify-center">
         <div className="my-auto">
           <h1 className="text-4xl font-semibold">42</h1>
