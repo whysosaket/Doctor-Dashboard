@@ -15,7 +15,7 @@ const TopBar = () => {
         >
         <h1 className='font-extralight'>Hello, </h1>
         <h1 className='flex font-semibold'>
-            Dr. Colter!
+           <span> Dr. Colter!</span>
         <MdWavingHand className='text-3xl ml-3 text-[#E6D78C]' />
         </h1>
         </motion.div>

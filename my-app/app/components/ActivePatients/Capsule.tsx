@@ -1,7 +1,13 @@
 import React from "react";
 import ProfilePicture from "../ProfilePicture";
+import { CiClock2 } from "react-icons/ci";
 
-const Capsule = () => {
+interface Props {
+    name: string;
+    time: string;
+}
+
+const Capsule:React.FC<Props> = ({name, time}) => {
   return (
     <>
       <div className="bg-teal-100 rounded-3xl px-6 py-2 my-auto flex">
@@ -9,8 +15,11 @@ const Capsule = () => {
           <ProfilePicture />
         </div>
         <div className="ml-2 my-auto">
-          <h1 className="text-md font-semibold text-black">Aliza Shah</h1>
-          <h1 className="text-xs font-light text-gray-800">09:00-10:00 am</h1>
+          <h1 className="text-md font-semibold text-black">{name}</h1>
+          <h1 className="text-[10px] font-light text-gray-800 flex">
+            <CiClock2 className="my-auto mr-1" />
+            {time}
+            </h1>
         </div>
       </div>
     </>
