@@ -5,7 +5,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const TeamMeeting = () => {
   return (
-    <div className="bg-secondary  w-[22rem] h-[11rem] rounded-[2.7rem] flex overflow-hidden m-4 py-8 px-8">
+    <div className="bg-secondary  w-[18rem] h-[11rem] rounded-[2.7rem] flex overflow-hidden m-4 py-8 px-8">
       <div className="w-[70%]">
         <h1 className="font-semibold text-xl">Team Meeting</h1>
         <div className="flex">

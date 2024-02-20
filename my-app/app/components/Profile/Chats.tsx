@@ -10,6 +10,7 @@ const Chats = () => {
         </div>
         <div className='flex justify-start'>
             <ProfilePicture />
+            <span className='mr-4'>{" "}</span>
             <Message message='I got a knee jerk. What should I do right now?' />
         </div>
         <h1 className='text-[#CCC] text-sm ml-16'>Tue 02:32pm</h1>
@@ -18,6 +19,7 @@ const Chats = () => {
         <div className='flex flex-col justify-end'>
             <div className='flex justify-end'>
                 <Message message='Hi Alexa.' />
+                <span className='mr-4'>{" "}</span>
                 <ProfilePicture />
             </div>
             <div className='ml-10'>
