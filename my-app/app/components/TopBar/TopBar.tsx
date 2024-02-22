@@ -5,7 +5,11 @@ import Search from './Search';
 import { FiBell } from "react-icons/fi";
 import {motion} from 'framer-motion';
 
-const TopBar = () => {
+interface TopBarProps {
+    doctorName: string;
+}
+
+const TopBar: React.FunctionComponent<TopBarProps> = ({doctorName}) => {
   return (
     <div className='mb-8 p-3 w-full text-2xl md:flex block'>
         <motion.div
@@ -15,7 +19,7 @@ const TopBar = () => {
         >
         <h1 className='font-extralight'>Hello, </h1>
         <h1 className='flex font-semibold'>
-           <span> Dr. Colter!</span>
+           <span> {doctorName}</span>
         <MdWavingHand className='text-3xl ml-3 text-[#E6D78C]' />
         </h1>
         </motion.div>
